@@ -27,6 +27,10 @@ p {
     padding: 3ch;
 }
 
+.website-logo {
+    font-family: neuropool, sans-serif;
+}
+
 footer ul {
     list-style-type: none;
 }
