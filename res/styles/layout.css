@@ -29,6 +29,8 @@ p {
 
 .website-logo {
     font-family: neuropool, sans-serif;
+    color: #fff;
+    text-decoration: none;
 }
 
 footer ul {
@@ -36,14 +38,18 @@ footer ul {
 }
 
 footer ul a:link {
+    color: #ffffffd9;
     text-decoration: none;
 }
 footer ul a:visited {
+    color: #ffffffd9;
     text-decoration: none;
 }
 footer ul a:hover {
+    color: #fff;
     text-decoration: underline;
 }
 footer ul a:active {
+    color: #fff;
     text-decoration: underline;
 }
