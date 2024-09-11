@@ -1,0 +1,26 @@
+[✔️] Ser responsivo;
+[✔️] Ter layout bem definido, com menu na lateral esquerda ou na parte superior, usando os elementos semânticos vistos em aula;
+[✔️] Ter 10 páginas (no mínimo);
+[✔️] Ter imagens;
+[✔️] Camadas usando elementos semânticos do HTML5;
+
+Deve estar em pelo menos uma das páginas um dos componentes Bootstrap enumerados abaixo:
+[✔️] Navbar
+[✔️] Card
+[] Carousel
+[✔️] Buttons
+[] Button group
+[✔️] Alert
+[✔️] List group
+[] Collapse
+[] Badge
+[] Pagination
+[] Table
+[] Figure
+[✔️] Breadcrumb
+[] Tooltips
+[] Toasts
+[] Modal
+
+[✔️] Uma das 10 páginas deve ser uma página de contato (Obrigatório Form);
+[✔️] Todos os elementos devem estar offline junto com seu projeto;
