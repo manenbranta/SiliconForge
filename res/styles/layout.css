@@ -33,10 +33,18 @@ p {
     text-decoration: none;
 }
 
+footer .d-flex {
+    gap: 5ch;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
 footer ul {
     list-style-type: none;
 }
-
 footer ul a:link {
     color: #ffffffd9;
     text-decoration: none;
