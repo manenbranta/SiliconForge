@@ -7,7 +7,7 @@
 Deve estar em pelo menos uma das páginas um dos componentes Bootstrap enumerados abaixo:
 [✔️] Navbar
 [✔️] Card
-[] Carousel
+[✔️] Carousel
 [✔️] Buttons
 [] Button group
 [✔️] Alert
