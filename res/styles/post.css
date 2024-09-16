@@ -26,4 +26,13 @@
 
 .sumario {
     width: 25%;
+    position: sticky;
+    top: 80px;
+    align-self: start;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+h2 {
+    scroll-margin-top: 100px;
 }

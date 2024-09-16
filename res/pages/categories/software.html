@@ -14,6 +14,18 @@
         <link rel="stylesheet" href="../../styles/cardspost.css">
         <link rel="stylesheet" href="../../styles/categories.css">
         <link rel="stylesheet" href="../../styles/fonts.css">
+
+        <style>
+            .card {
+                width:100%;
+            }
+            .card-img-div {
+                max-width: 15%;
+            }
+            .card-body {
+                width: min-content;
+            }
+        </style>
     </head>
     <body id="page-top" class="d-flex flex-column h-100">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -59,15 +71,22 @@
                     </ol>
                 </nav>
 
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="../posts/software/distroslinux.html" class="d-flex flex-column border-top text-decoration-none">
-                            <img width="15%" src="../../img/destaques/linuxdistros.png" alt="Post Cover">
-                        </a>
-                    </li>
-                    <li>Item</li>
-                    <li>Item</li>
-                </ul>
+                <div class="card bg-dark text-white p-3 d-flex flex-row">
+                    <div class="card-img-div">
+                        <img
+                            src="../../img/artigos/linuxdistros.png"
+                            class="img-fluid rounded bg-light"
+                            alt="Card title"
+                        />
+                    </div>
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <h3 class="card-title card-link"><a href="../posts/software/distroslinux.html">Distribuições Linux</a></h3>
+                        <p class="card-text">
+                            O que são, e qual eu deveria escolher?
+                        </p>
+                    </div>
+                </div>
+                
             </div>
         </main>
 
