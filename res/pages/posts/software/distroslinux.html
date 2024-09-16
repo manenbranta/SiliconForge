@@ -22,6 +22,10 @@
                     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sumarioOffcanvas"
+                    aria-controls="sumarioOffcanvas" aria-label="Toggle navigation">
+                    <span>Abrir Sumário</span>
+                </button>
                 <div class="navbar-brand">
                     <a class="website-logo" href="../../../../index.html">
                         <img src="../../../img/cpu.svg" class="logo" width="32" alt="An icon of a cpu">
@@ -52,13 +56,20 @@
 
         <main>
             <div class="d-flex m-3">
-                <div class="container sumario">
-                    <ul class="list-group">
-                        <a href="#Introducao" class="list-group-item list-group-item-action bg-dark text-white">1. Introdução</a>
-                        <a href="#Historia" class="list-group-item list-group-item-action bg-dark text-white">2. História do Linux</a>
-                        <a href="#ComoEscolher" class="list-group-item list-group-item-action bg-dark text-white">3. Como escolher uma "distro"?</a>
-                    </ul>
+                <div class="offcanvas-md offcanvas-end text-white" tabindex="-1" id="sumarioOffcanvas" aria-labelledby="sumarioOffcanvasLabel">
+                    <div class="offcanvas-header bg-dark">
+                        <h5 class="offcanvas-title" id="sumarioOffcanvasLabel">Sumário</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body sumario bg-dark">
+                        <ul class="list-group">
+                            <a href="#Introducao" class="list-group-item list-group-item-action bg-dark text-white">1. Introdução</a>
+                            <a href="#Historia" class="list-group-item list-group-item-action bg-dark text-white">2. Um pouco de história</a>
+                            <a href="#ComoEscolher" class="list-group-item list-group-item-action bg-dark text-white">3. Como escolher uma "distro"?</a>
+                        </ul>
+                    </div>
                 </div>
+                
                 <div class="container text-white main mb-3 flex-grow-1">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
@@ -86,9 +97,12 @@
                                 A história do Linux começa no ano de 1991, pelas mãos de um estudante universitário finlandês chamado Linus Torvalds. O Linux foi criado por ele, não totalmente do "zero", mas sim como uma variação do Minix.
                                 O Minix é um sistema operacional simples, criado por Andrew S. Tanenbaum, um renomado professor de computação que é conhecido pelos diversos livros que escreveu para a área. <br>
                                 Tanenbaum disponibilizou o Minix principalmente para servir de auxílio no ensino de computação. Trata-se de um sistema operacional simples, que exige poucos recursos de hardware e cuja primeira versão foi lançada em 1987.
-
-Dadas as suas finalidades acadêmicas, não só o Minix foi disponibilizado de maneira gratuita e livre, como também o seu código-fonte completo. Assim, os estudantes de computação podiam — e podem — estudá-lo inteiramente para desenvolver habilidades ou mesmo para criar projetos derivados. Foi assim que Linus Torvalds entrou nessa história.
+                                Dadas as suas finalidades acadêmicas, não só o Minix foi disponibilizado de maneira gratuita e livre, como também o seu código-fonte completo. Assim, os estudantes de computação podiam — e podem — estudá-lo inteiramente para desenvolver habilidades ou mesmo para criar projetos derivados. Foi assim que Linus Torvalds entrou nessa história.
                             </p>
+                            <figure class="figure">
+                              <img src="../../../img/artigos/linus.webp" class="figure-img img-fluid rounded" width="50%" alt="Linus Torvalds">
+                              <figcaption class="figure-caption text-white">Uma imagem de Torvalds.</figcaption>
+                            </figure>
                         </section>
                         <section>
                             <h2 id="ComoEscolher">Como escolher uma "distro"?</h2>

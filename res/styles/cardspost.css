@@ -1,3 +1,12 @@
 .card-title.card-link a {
     text-decoration: none;
 }
+.card {
+    width:100%!important;
+}
+.card-img-div {
+    max-width: 15%;
+}
+.card-body {
+    width: min-content;
+}

@@ -13,10 +13,10 @@ Deve estar em pelo menos uma das páginas um dos componentes Bootstrap enumerado
 [✔️] Alert
 [✔️] List group
 [] Collapse
-[] Badge
+[✔️] Badge
 [] Pagination
 [] Table
-[] Figure
+[✔️] Figure
 [✔️] Breadcrumb
 [] Tooltips
 [] Toasts
