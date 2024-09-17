@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Silicon Forge - Post</title>
+
+    <link rel="icon" type="image/x-icon" href="../../../img/cpu.svg" />
+    <link href="../../../styles/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../styles/layout.css" rel="stylesheet">
+    <link href="../../../styles/breadcrumb.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/cardspost.css">
+    <link rel="stylesheet" href="../../../styles/post.css">
+    <link rel="stylesheet" href="../../../styles/fonts.css">
+</head>
+
+<body id="page-top" class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#sumarioOffcanvas" aria-controls="sumarioOffcanvas" aria-label="Toggle navigation">
+                <span>Abrir Sumário</span>
+            </button>
+            <div class="navbar-brand">
+                <a class="website-logo" href="../../../../index.html">
+                    <img src="../../../img/cpu.svg" class="logo" width="32" alt="An icon of a cpu">
+                    Silicon Forge
+                </a>
+            </div>
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white border-bottom" id="offcanvasNavbarLabel">Silicon Forge</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Software</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../../categories/hardware.html">Hardware</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="d-flex gap-3 m-3">
+            <div class="offcanvas-md offcanvas-end text-white" tabindex="-1" id="sumarioOffcanvas"
+                aria-labelledby="sumarioOffcanvasLabel">
+                <div class="offcanvas-header bg-dark">
+                    <h5 class="offcanvas-title" id="sumarioOffcanvasLabel">Sumário</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body sumario bg-dark">
+                    <ul class="list-group">
+                        <a href="#Introducao" class="list-group-item list-group-item-action bg-dark text-white">1. Introdução</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="post-container container d-flex flex-column align-items-center text-white main mb-3 flex-grow-1">
+                <div class="container">
+                    <nav class="rounded" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../../../../index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="../../categories/software.html">Software</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Post</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="d-flex flex-column text-center">
+                    <h1 class="blog-post-title">Unidades de Armazenamento</h1>
+                    <p class="blog-post-subtitle">Bits, bytes, megabytes, gigabytes, entre outros</p>
+                    <div class="btn-group !spacing mb-3" role="group" aria-label="Basic example">
+                        <button id="btn-like" class="btn btn-primary btn-sm " type="button">
+                            <svg width="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 10V20M8 10L4 9.99998V20L8 20M8 10L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20L8 20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </button>
+                        <button id="btn-dislike" class="btn btn-primary btn-sm" type="button">
+                            <svg width="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 14V4M8 14L4 14V4.00002L8 4M8 14L13.1956 20.0615C13.6886 20.6367 14.4642 20.884 15.1992 20.7002L15.2467 20.6883C16.5885 20.3529 17.1929 18.7894 16.4258 17.6387L14 14H18.5604C19.8225 14 20.7691 12.8454 20.5216 11.6078L19.3216 5.60779C19.1346 4.67294 18.3138 4.00002 17.3604 4.00002L8 4" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <img class="rounded mb-3" src="../../../img/artigos/unidades.jpeg" width="75%" alt="Header do Post">
+                <div class="blog-post">
+                    <section>
+                        <h2 id="Introducao">Introdução</h2>
+                        <p>
+                            Bootstrap é um framework CSS utilizado em aplicações front-end, ou seja, na camada de
+                            interface com o usuário para o desenvolvimento de aplicações adaptáveis à tela de qualquer
+                            dispositivo. <br>
+                            No WordPress, por exemplo, ele pode ser instalado como um tema ou ser utilizado para o
+                            desenvolvimento de plugins ou, ainda, dentro deles para estilizar suas funcionalidades. O
+                            objetivo do framework é oferecer uma experiência mais agradável ao usuário durante a
+                            utilização do site.
+                            Por isso, ele conta com diversos recursos para configurar os estilos dos elementos da página
+                            de forma simples e eficiente, além de facilitar a construção de páginas que sejam, ao mesmo
+                            tempo, adaptadas para web e para dispositivos móveis. Portanto, é importante conhecer o
+                            potencial desse framework.
+                        </p>
+                    </section>
+                </div>
+
+                <div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-sm">
+                            <li class="page-item">
+                                <a class="bg-dark page-link" href="./distroslinux.html" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="bg-dark page-link" href="./distroslinux.html">1</a></li>
+                            <li class="page-item"><a class="bg-dark page-link" href="./bootstrap.html">2</a></li>
+                            <li class="page-item"><a class="bg-dark page-link" href="./malware.html">3</a></li>
+                            <li class="page-item active"><a class="bg-primary page-link text-white" href="#">4</a></li>
+
+                            <li class="page-item">
+                                <a class="bg-dark page-link" href="./malware.html" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-white text-center text-lg-start footer mt-auto p-3">
+        <div class="d-flex justify-content-center align-items-center">
+            <ul class="m-0 p-0 d-flex flex-column align-items-center">
+                <li>
+                    <a class="nav-link" href="./res/pages/contato.html">Contato</a>
+                </li>
+            </ul>
+            <div class="text-center p-3">
+                © 2024 Copyright: Chloe Cadore Martins
+            </div>
+        </div>
+    </footer>
+
+    
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast-like" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body bg-dark text-white d-flex">
+                Você deu like no post!
+                <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast-dislike" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body bg-dark text-white d-flex">
+                Você deu dislike no post!
+                <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="../../../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../../../js/scripts.js"></script>
+</body>
+
+</html>
