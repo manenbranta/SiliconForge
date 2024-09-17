@@ -5,12 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Silicon Forge - O que é Bootstrap?</title>
+        <title>Silicon Forge - Post</title>
 
         <link rel="icon" type="image/x-icon" href="../../../img/cpu.svg" />
         <link href="../../../styles/bootstrap/bootstrap.min.css" rel="stylesheet">
         <link href="../../../styles/layout.css" rel="stylesheet">
         <link href="../../../styles/breadcrumb.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../styles/cardspost.css">
+        <link rel="stylesheet" href="../../../styles/post.css">
         <link rel="stylesheet" href="../../../styles/fonts.css">
     </head>
     <body id="page-top" class="d-flex flex-column h-100">
@@ -19,6 +21,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                </button>
+                <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sumarioOffcanvas"
+                    aria-controls="sumarioOffcanvas" aria-label="Toggle navigation">
+                    <span>Abrir Sumário</span>
                 </button>
                 <div class="navbar-brand">
                     <a class="website-logo" href="../../../../index.html">
@@ -48,22 +54,71 @@
             </div>
         </nav>
 
-        <main>            
-            <div class="container main text-white mb-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../../../../index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../../categories/software.html">Software</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Web > Post</li>
-                    </ol>
-                </nav>
-
+        <main>
+            <div class="d-flex m-3">
+                <div class="offcanvas-md offcanvas-end text-white" tabindex="-1" id="sumarioOffcanvas" aria-labelledby="sumarioOffcanvasLabel">
+                    <div class="offcanvas-header bg-dark">
+                        <h5 class="offcanvas-title" id="sumarioOffcanvasLabel">Sumário</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body sumario bg-dark">
+                        <ul class="list-group">
+                            <a href="#Introducao" class="list-group-item list-group-item-action bg-dark text-white">1. Introdução</a>
+                        </ul>
+                    </div>
+                </div>
                 
+                <div class="container d-flex flex-column align-items-center text-white main mb-3 flex-grow-1">
+                    <div class="container">
+                        <nav class="rounded" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../../../../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../../categories/software.html">Software</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Post</li>
+                            </ol>
+                        </nav>
+                    </div>
+    
+                    <h1 class="blog-post-title">Bootstrap</h1>
+                    <p class="blog-post-subtitle">O que é, usos e alternativas</p>
+                    <div class="blog-post">
+                        <section>
+                            <h2 id="Introducao">Introdução</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem cum ullam adipisci, beatae, sit consequuntur eaque corporis sapiente quam, voluptates iure! Explicabo voluptatum earum dicta libero amet. Sunt, quaerat ab.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora officia nisi nulla consequuntur quisquam laudantium modi iste dolores deleniti ullam sapiente quis vitae reprehenderit ut delectus, cum expedita vero atque!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus velit accusamus dolorem fugiat ea non facere repellendus nobis corporis sint pariatur, autem, molestias odio blanditiis. Voluptatibus eos excepturi sit labore.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas quos sed aspernatur, suscipit natus porro, eligendi iure temporibus vero dolorem, molestias minima animi pariatur exercitationem nostrum accusantium facilis quisquam.
+                            </p>
+                        </section>
+                    </div>
+
+                    <div>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination pagination-sm">
+                            <li class="page-item">
+                                <a class="bg-dark page-link" href="./distroslinux.html" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="bg-dark page-link" href="./distroslinux.html">1</a></li>
+                            <li class="page-item active"><a class="bg-primary page-link text-white" href="#">2</a></li>
+                            <li class="page-item"><a class="bg-dark page-link" href="./malware.html">3</a></li>
+                            
+                            <li class="page-item">
+                                <a class="bg-dark page-link" href="./bootstrap" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </main>
 
         <footer class="text-white text-center text-lg-start footer mt-auto p-3">
-            <div class="d-flex justify-content-center align-items-center" style="gap: 5ch;">
+            <div class="d-flex justify-content-center align-items-center" >
                 <ul class="m-0 p-0 d-flex flex-column align-items-center">
                     <li>
                         <a class="nav-link" href="./res/pages/contato.html">Contato</a>

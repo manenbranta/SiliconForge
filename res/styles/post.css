@@ -35,6 +35,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    .post-container {
+        width: 100%;
+    }
     .blog-post img {
         width: 90%;
     }
