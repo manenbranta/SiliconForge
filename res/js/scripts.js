@@ -32,3 +32,23 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const toastLikeTrigger = document.getElementById('btn-like');
+const toastLike = document.getElementById('toast-like');
+
+if (toastLikeTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLike)
+  toastLikeTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+
+const toastDislikeTrigger = document.getElementById('btn-dislike');
+const toastDislike = document.getElementById('toast-dislike');
+
+if (toastDislikeTrigger) {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastDislike)
+    toastDislikeTrigger.addEventListener('click', () => {
+      toastBootstrap.show()
+    })
+}

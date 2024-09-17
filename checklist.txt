@@ -9,7 +9,7 @@ Deve estar em pelo menos uma das páginas um dos componentes Bootstrap enumerado
 [✔️] Card
 [✔️] Carousel
 [✔️] Buttons
-[] Button group
+[✔️] Button group
 [✔️] Alert
 [✔️] List group
 [] Collapse
@@ -19,7 +19,7 @@ Deve estar em pelo menos uma das páginas um dos componentes Bootstrap enumerado
 [✔️] Figure
 [✔️] Breadcrumb
 [] Tooltips
-[] Toasts
+[✔️] Toasts
 [] Modal
 
 [✔️] Uma das 10 páginas deve ser uma página de contato (Obrigatório Form);
