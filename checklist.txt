@@ -14,7 +14,7 @@ Deve estar em pelo menos uma das páginas um dos componentes Bootstrap enumerado
 [✔️] List group
 [] Collapse
 [✔️] Badge
-[] Pagination
+[✔️] Pagination
 [] Table
 [✔️] Figure
 [✔️] Breadcrumb

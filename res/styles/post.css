@@ -39,3 +39,7 @@ h2 {
         width: 90%;
     }
 }
+
+.pagination .active a {
+    border-color: #fff;
+}
