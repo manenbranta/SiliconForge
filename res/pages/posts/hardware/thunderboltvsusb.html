@@ -1,84 +1,269 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Silicon Forge - Thunderbolt vs USB 4</title>
 
-        <link rel="icon" type="image/x-icon" href="../../../img/cpu.svg" />
-        <link href="../../../styles/bootstrap/bootstrap.min.css" rel="stylesheet">
-        <link href="../../../styles/layout.css" rel="stylesheet">
-        <link href="../../../styles/breadcrumb.css" rel="stylesheet">
-        <link rel="stylesheet" href="../../../styles/cardspost.css">
-        <link rel="stylesheet" href="../../../styles/fonts.css">
-    </head>
-    <body id="page-top" class="d-flex flex-column h-100">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-brand">
-                    <a class="website-logo" href="../../../../index.html">
-                        <img src="../../../img/cpu.svg" class="logo" width="32" alt="An icon of a cpu">
-                        Silicon Forge
-                    </a>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Silicon Forge - Post</title>
+
+    <link rel="icon" type="image/x-icon" href="../../../img/cpu.svg" />
+    <link href="../../../styles/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../styles/layout.css" rel="stylesheet">
+    <link href="../../../styles/breadcrumb.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles/cardspost.css">
+    <link rel="stylesheet" href="../../../styles/post.css">
+    <link rel="stylesheet" href="../../../styles/fonts.css">
+</head>
+
+<body id="page-top" class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#sumarioOffcanvas" aria-controls="sumarioOffcanvas" aria-label="Toggle navigation">
+                <span>Abrir Sumário</span>
+            </button>
+            <div class="navbar-brand">
+                <a class="website-logo" href="../../../../index.html">
+                    <img src="../../../img/cpu.svg" class="logo" width="32" alt="An icon of a cpu">
+                    Silicon Forge
+                </a>
+            </div>
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white border-bottom" id="offcanvasNavbarLabel">Silicon Forge</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title text-white border-bottom" id="offcanvasNavbarLabel">Silicon Forge</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../../../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Software</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="../../categories/hardware.html">Hardware</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="d-flex gap-3 m-3">
+            <div class="offcanvas-md offcanvas-end text-white" tabindex="-1" id="sumarioOffcanvas"
+                aria-labelledby="sumarioOffcanvasLabel">
+                <div class="offcanvas-header bg-dark">
+                    <h5 class="offcanvas-title" id="sumarioOffcanvasLabel">Sumário</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body sumario bg-dark">
+                    <ul class="list-group">
+                        <a href="#Introducao" class="list-group-item list-group-item-action bg-dark text-white">1. Introdução</a>
+                        <a href="#Thunderbolt" class="list-group-item list-group-item-action bg-dark text-white">2. O que é Thunderbolt</a>
+                        <a href="#USB" class="list-group-item list-group-item-action bg-dark text-white">3. O que é USB 4?</a>
+                        <a href="#velocidadeusb" class="list-group-item list-group-item-action bg-dark text-white"><small>3.1 Velocidade</small></a>
+                        <a href="#Comparacao" class="list-group-item list-group-item-action bg-dark text-white">4. As diferenças</a>
+                        <a href="#Conclusao" class="list-group-item list-group-item-action bg-dark text-white">5. Conclusão</a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="post-container container d-flex flex-column align-items-center text-white main mb-3 flex-grow-1">
+                <div class="container">
+                    <nav class="rounded" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="../../../../index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="../../categories/software.html">Software</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Post</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="d-flex flex-column text-center">
+                    <h1 class="blog-post-title">Thunderbolt VS USB 4</h1>
+                    <p class="blog-post-subtitle">Principais diferenças e vantagens</p>
+                    <div class="btn-group !spacing mb-3" role="group" aria-label="Basic example">
+                        <button id="btn-like" class="btn btn-primary btn-sm " type="button">
+                            <svg width="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 10V20M8 10L4 9.99998V20L8 20M8 10L13.1956 3.93847C13.6886 3.3633 14.4642 3.11604 15.1992 3.29977L15.2467 3.31166C16.5885 3.64711 17.1929 5.21057 16.4258 6.36135L14 9.99998H18.5604C19.8225 9.99998 20.7691 11.1546 20.5216 12.3922L19.3216 18.3922C19.1346 19.3271 18.3138 20 17.3604 20L8 20" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </button>
+                        <button id="btn-dislike" class="btn btn-primary btn-sm" type="button">
+                            <svg width="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M8 14V4M8 14L4 14V4.00002L8 4M8 14L13.1956 20.0615C13.6886 20.6367 14.4642 20.884 15.1992 20.7002L15.2467 20.6883C16.5885 20.3529 17.1929 18.7894 16.4258 17.6387L14 14H18.5604C19.8225 14 20.7691 12.8454 20.5216 11.6078L19.3216 5.60779C19.1346 4.67294 18.3138 4.00002 17.3604 4.00002L8 4" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </button>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="../../../../index.html">Home</a>
+                </div>
+
+                <img class="rounded mb-3" src="../../../img/destaques/thunderboltvsusb.png" width="75%" alt="Header do Post">
+                <div class="blog-post">
+                    <section>
+                        <h2 id="Introducao">Introdução</h2>
+                        <p>
+                            O USB4 foi anunciado pouco tempo depois de o USB 3.2 ter se tornado oficial. 
+                            Há um bom motivo para esse intervalo tão curto: a quarta geração do USB (Universal Serial Bus) é baseada no
+                            avançado padrão Thunderbolt 3. <br> 
+                            Já o Thunderbolt, tendo a Intel como principal responsável por seu desenvolvimento, é um padrão de comunicação entre
+                            dispositivos que, em parte, aproveita recursos tecnológicos já existentes. <br>
+                            Ele faz uso de protocolos de dois padrões bastante conhecidos pelo mercado: PCI Express e DisplayPort. O
+                            primeiro é um barramento há muito tempo utilizado para a conexão interna de dispositivos ao computador, como placas de
+                            vídeo e placas Ethernet. O segundo é uma interface para transmissões de vídeo e áudio muito usada pela Apple e por
+                            companhias que fabricam equipamentos mais sofisticados. Até certo ponto, o DisplayPort concorre com o HDMI. <br>
+                            Enfim, os dois são padrões de transferência de dados extremamente rápidos e suportam múltiplas <em>features</em>.
+                            As tecnologias tem tantas semelhancias que pode ser realmente díficil saber a diferença. Não é tão trivial como, por exemplo,
+                            Saber a diferença entre USB-C e USB-A.
+                        </p>
+                    </section>
+                    <section>
+                        <h2 id="Thunderbolt">O que é Thunderbolt?</h2>
+                        <p>
+                            A Intel reservou para o Thunderbolt 3 duas grandes características: velocidade de transmissão de dados de até 40 Gb/s
+                            (também bidirecional) e um novo conector. <br>
+                            
+                            A Intel explica que o Thunderbolt 3 é capaz de transmitir, simultaneamente, vídeos para dois monitores com resolução 4K
+                            e 60 quadros por segundo ou para um único dispositivo, mas em 5K e 60 quadros por segundo. Para quem trabalha com
+                            grandes volumes de dados, a tecnologia também pode fazer diferença: 40 Gb/s é o mesmo que transferir 5 gigabytes por
+                            segundo, aproximadamente. <br>
+                            Mas, provavelmente, o que mais surpreende é o novo conector. No lugar da porta Mini DisplayPort, a Intel decidiu adotar
+                            o padrão USB tipo C (ou USB-C), que foi criado especialmente para o USB 3.1.
+                            O USB-C tem duas grandes vantagens: é compacto, podendo até mesmo ser implementado em smartphones, e é reversível, ou
+                            seja, um cabo do tipo pode ser conectado virado para cima ou para baixo, tanto faz.
+                        </p>
+                        <figure class="figure">
+                            <img class="figure-image img-fluid rounded" src="../../../img/artigos/thunderbolt_logo.jpg" alt="Logo do Thunderbolt">
+                          <figcaption class="figure-caption text-white">Logotipo do Thunderbolt.</figcaption>
+                        </figure>
+                        
+                    </section>
+                    <section>
+                        <h2 id="USB">O que é USB 4?</h2>
+                        <p>
+                            Ele é um padrão para interconexão de dispositivos eletrônicos que traz várias vantagens em relação às versões
+                            anteriores do USB. Entre elas estão mais velocidade (40, 80 ou 120 Gb/s), compatibilidade com o Thunderbolt e otimização
+                            do fluxo de dados quando há transmissões de vídeo.
+                            As especificações do USB4 foram anunciadas em março de 2019 pelo USB Implementers Forum (USB-IF), grupo responsável
+                            pelas definições técnicas da tecnologia.
+
+                            Toda nova versão do USB traz retrocompatibilidade, ou seja, funciona com versões anteriores da tecnologia. Com o USB4
+                            não é diferente. É possível usar uma conexão do tipo com dispositivos USB 3.0, por exemplo.
+                        </p>
+
+                        <h4 id="velocidadeusb">Velocidade</h4>
+                        <p>
+                            Um dos principais atrativos do USB4 é a sua velocidade de transferência de dados. De acordo com o USB-IF, a primeira
+                            versão da tecnologia pode alcançar até 40 Gb/s (gigabits por segundo) de maneira bidirecional (um dispositivo pode
+                            enviar dados a 40 Gb/s e, ao mesmo tempo, receber um fluxo também com até 40 Gb/s). Para você ter ideia, o USB 3.2, a
+                            versão mais rápida até então, atinge até 20 Gb/s.
+                            
+                            Essa altíssima velocidade pode ser útil, por exemplo, para transferir dados de um SSD portátil para um computador e
+                            vice-versa. Mas talvez não seja útil para uma impressora ou um mouse, por exemplo.
+                            
+                            É por isso que dispositivos USB4 também podem trabalhar com velocidades menores. O USB-IF definiu duas taxas como padrão
+                            para a tecnologia: 20 Gb/s e, como você já sabe, 40 Gb/s.
+                        </p>
+                    </section>
+                    <section>
+                        <h2 id="Comparacao">As diferenças</h2>
+                        <p>
+                            Pode ser difícil perceber as diferenças entre o Thunderbolt e o USB 4 a primeira vista: Os dois usam a porta USB-C, 
+                            são capazes de velocidades de 40 Gb/s, podem carregar dispositivos e passar vídeo. Pode ser tentador ignorar os nomes diferentes e só
+                            falar que as tecnologias são as mesmas, porém elas tem sim diferenças consideráveis: Trata-se dos requerimentos básicos dos padrões. <br> <br>
+
+                            O USB tem um requerimento mínimo de 20 Gb/s para entrar no padrão 4.0, enquanto o Thunderbolt requer 32 Gb/s. O USB 4 requer no mínimo 7.5W,
+                            enquanto o Thunderbolt <em>duplica</em> a potência para 15W. Os requerimentos mínimos são importantes serem considerados na compra de um dispositivo,
+                            pois a empresa pode escolher entre uma velocidade de 20 Gb/s e 40 Gb/s de velocidade para dispositivos USB 4, enquanto com o Thunderbolt, sempre há a garantia
+                            de pelo menos 32 Gb/s e 15W.
+
+                            Thunderbolt suporta uma velocidade de 40 Gb/s para cabos de até 2 metros, enquanto o USB 4 suporta 40 Gb/s apenas em cabos de até um metro, e dividem a velocidade
+                            em dois para cabos de 2 metros, resultando em 20 Gb/s.
+                        </p>
+                    </section>
+                    <section>
+                        <h2 id="Conclusao">Conclusão</h2>
+                        <p>
+                            O Thunderbolt e USB 4 são padrões bastante semelhantes, porém o Thunderbolt tem requerimentos básicos mais altos. Dispositivos USB 4 podem ser mais baratos pois seus
+                            requerimentos são mais baixos, porém você não irá ganhar todas os recursos disponíveis se comparado com o Thunderbolt. Então, a resposta para qual eu deveria escolher é: Depende.
+
+                            Caso performance seja o que você precisa e você não liga em pagar mais caro, você deveria procurar por dispositivos Thunderbolt. 
+                            Se 20 Gb/s e 40 Gb/s não for uma diferença significativa para você, ou você não tem tanto dinheiro para gastar, escolha USB 4.
+
+                            Lembre-se de que o USB 4 também suporta velocidades tão altas quanto o Thunderbolt: Você terá de checar nas especificações do produto para saber.
+
+                            Enfim, mesmo que o Thunderbolt seja geralmente considerado como o padrão superior, o USB 4 ainda sim é uma grande evolução comparativamente com o seu padrão anterior.
+                            O fato de que você mal pode entender as diferenças entre ele e o Thunderbolt mostra o quanto o USB evoluiu. Porém, se tivesse que escolher um padrão, o ganhador claramente
+                            seria o Thunderbolt.
+                        </p>
+                    </section>
+                </div>
+
+                <div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-sm">
+                            <li class="page-item disabled">
+                                <a class="bg-dark text-white page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                </a>
                             </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" href="../../categories/software.html">Software</a>
-                            </li>
-                            <li class="nav-item mx-2">
-                                <a class="nav-link" aria-current="page" href="#">Hardware</a>
+                            <li class="page-item active"><a class="bg-primary page-link text-white" href="#">1</a></li>
+                            <li class="page-item"><a class="bg-dark page-link" href="./processador.html">2</a></li>
+                            <li class="page-item"><a class="bg-dark page-link" href="./tipostelas.html">3</a></li>
+
+                            <li class="page-item">
+                                <a class="bg-dark page-link" href="./processador.html" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
-        </nav>
+        </div>
+    </main>
 
-        <main>            
-            <div class="container main text-white mb-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="../../../../index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="../../categories/hardware.html">Hardware</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Post</li>
-                    </ol>
-                </nav>
-
-                
+    <footer class="text-white text-center text-lg-start footer mt-auto p-3">
+        <div class="d-flex justify-content-center align-items-center">
+            <ul class="m-0 p-0 d-flex flex-column align-items-center">
+                <li>
+                    <a class="nav-link" href="./res/pages/contato.html">Contato</a>
+                </li>
+            </ul>
+            <div class="text-center p-3">
+                © 2024 Copyright: Chloe Cadore Martins
             </div>
-        </main>
+        </div>
+    </footer>
 
-        <footer class="text-white text-center text-lg-start footer mt-auto p-3">
-            <div class="d-flex justify-content-center align-items-center" >
-                <ul class="m-0 p-0 d-flex flex-column align-items-center">
-                    <li>
-                        <a class="nav-link" href="../../contato.html">Contato</a>
-                    </li>
-                </ul>
-                <div class="text-center p-3">
-                    © 2024 Copyright: Chloe Cadore Martins
-                </div>
+    
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast-like" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body bg-dark text-white d-flex">
+                Você deu like no post!
+                <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-        </footer>
+        </div>
+    </div>
 
-        <!-- Bootstrap core JS-->
-        <script src="../../../js/bootstrap/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="../../../js/scripts.js"></script>
-    </body>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast-dislike" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body bg-dark text-white d-flex">
+                Você deu dislike no post!
+                <button type="button" class="btn-close btn-close-white ms-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="../../../js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="../../../js/scripts.js"></script>
+</body>
+
 </html>

@@ -90,10 +90,25 @@
                         <textarea name="message" class="form-control bg-dark text-white" id="inputMessage" placeholder="Escreva seu e-mail"></textarea>
                      </div>
                 
-                    <button type="submit" class="btn btn-primary"> Mandar</button>
+                    <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Mandar</button>
                 </form>
             </div>
         </main>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Silicon Forge</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Mensagem mandada com sucesso!
+                    </div>
+                </div>
+            </div>
+        </div>
+          
 
         <footer class="text-white text-center text-lg-start footer mt-auto p-3">
             <div class="d-flex justify-content-center align-items-center" >

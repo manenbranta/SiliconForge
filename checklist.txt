@@ -12,13 +12,13 @@ Deve estar em pelo menos uma das páginas um dos componentes Bootstrap enumerado
 [✔️] Button group
 [✔️] Alert
 [✔️] List group
-[] Collapse
+[✔️] Collapse
 [✔️] Badge
 [✔️] Pagination
-[] Table
+[✔️] Table
 [✔️] Figure
 [✔️] Breadcrumb
-[] Tooltips
+[✔️] Tooltips
 [✔️] Toasts
 [] Modal
 
